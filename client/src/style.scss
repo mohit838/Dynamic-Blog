@@ -5,7 +5,18 @@ $error: #ff0000;
 
 // Main CSS
 .mainApp {
+  display: flex;
+  justify-content: center;
+
   .container {
+    width: 1024px;
+
+    .linkUrl {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    // Login and Registration
     .login {
       display: flex;
       flex-direction: column;
@@ -66,6 +77,64 @@ $error: #ff0000;
             text-decoration: none;
             color: black;
             font-weight: bold;
+          }
+        }
+      }
+    }
+
+    // Navbar
+
+    .navbar {
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+          h6 {
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+
+          span {
+            cursor: pointer;
+          }
+
+          .write {
+            background-color: $bg;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 300;
+
+            border: 1px solid white;
+
+            &:hover {
+              background-color: #a85353;
+              color: white;
+              border: 1px solid #000;
+            }
           }
         }
       }
