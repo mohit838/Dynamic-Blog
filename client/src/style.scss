@@ -1,0 +1,74 @@
+// Color Variable
+$bg: #90ee90;
+$button: #f78e8e;
+$error: #ff0000;
+
+// Main CSS
+.mainApp {
+  .container {
+    .login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $bg;
+
+      h1 {
+        font-size: 24px;
+        color: #a85353;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 250px;
+        padding: 20px;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+          outline: none;
+        }
+
+        button {
+          font-size: 1rem;
+          cursor: pointer;
+          padding: 10px;
+          background-color: $button;
+          border: none;
+          border-radius: 7px;
+          -webkit-border-radius: 7px;
+          -moz-border-radius: 7px;
+          -ms-border-radius: 7px;
+          -o-border-radius: 7px;
+
+          &:hover {
+            color: #fff;
+            background-color: black;
+          }
+        }
+
+        p {
+          font-size: 12px;
+          text-align: center;
+          color: $error;
+        }
+
+        span {
+          font-size: 14px;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

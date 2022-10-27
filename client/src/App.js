@@ -1,9 +1,14 @@
 import Routing from "./Router/Routing";
+import "./style.scss";
 
 function App() {
   return (
     <>
-      <Routing></Routing>
+      <div className="mainApp">
+        <div className="container">
+          <Routing></Routing>
+        </div>
+      </div>
     </>
   );
 }
