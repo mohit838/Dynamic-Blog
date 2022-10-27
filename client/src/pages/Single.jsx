@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import Menu from "../components/Menu";
 
 const Single = () => {
   return (
@@ -63,7 +64,9 @@ const Single = () => {
             perferendis labore sit.
           </p>
         </div>
-        <div className="menu">m</div>
+
+        {/* Sidebar Menu */}
+        <Menu />
       </div>
     </>
   );
