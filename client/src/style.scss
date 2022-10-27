@@ -2,6 +2,7 @@
 $bg: #90ee90;
 $button: #f78e8e;
 $error: #ff0000;
+$footerBg: #add8e6;
 
 // Main CSS
 .mainApp {
@@ -113,7 +114,7 @@ $error: #ff0000;
           }
 
           .write {
-            background-color: $bg;
+            background-color: $footerBg;
             height: 50px;
             width: 50px;
             border-radius: 50px;
@@ -131,12 +132,33 @@ $error: #ff0000;
             border: 1px solid white;
 
             &:hover {
-              background-color: #a85353;
-              color: white;
+              background-color: lightblue;
+              color: #000000;
               border: 1px solid #000;
             }
           }
         }
+      }
+    }
+
+    // Footer
+
+    footer {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: $footerBg;
+      font-size: 12px;
+      height: 100px;
+      padding: 0 20px;
+
+      img {
+        height: 50px;
+      }
+
+      p {
       }
     }
   }
