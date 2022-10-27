@@ -1,5 +1,11 @@
+import Routing from "./Router/Routing";
+
 function App() {
-  return <>Hello</>;
+  return (
+    <>
+      <Routing></Routing>
+    </>
+  );
 }
 
 export default App;
