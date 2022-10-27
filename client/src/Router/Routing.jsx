@@ -1,17 +1,47 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Outlet,
+} from "react-router-dom";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Single from "../pages/Single";
+import Write from "../pages/Write";
 import Home from "./../pages/Home";
+
+// @Children or Child Componet for "<Outlet/>"in React-Router-Dom Latest version
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <Home />
-      </>
-    ),
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/write",
+        element: <Write />,
+      },
+      {
+        path: "/post/:id",
+        element: <Single />,
+      },
+    ],
   },
   {
     path: "/register",
