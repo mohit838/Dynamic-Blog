@@ -12,6 +12,7 @@ import Register from "../pages/Register";
 import Single from "../pages/Single";
 import Write from "../pages/Write";
 import Home from "./../pages/Home";
+import NotFound from "./../components/NotFound";
 
 // @Children or Child Componet for "<Outlet/>"in React-Router-Dom Latest version
 const Layout = () => {
@@ -56,6 +57,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <Login />
+      </>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <>
+        <NotFound />
       </>
     ),
   },
