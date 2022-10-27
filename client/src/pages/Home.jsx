@@ -14,10 +14,11 @@ const Home = () => {
                   <img src={value.img} alt="post-img" />
                 </div>
                 <div className="content">
-                  <Link to={`/post/${index}`}>
+                  <Link className="linkUrl" to={`/post/${index}`}>
                     <h1>{value.title}</h1>
                   </Link>
                   <p>{value.desc}</p>
+                  <button>Read More</button>
                 </div>
               </div>
             );
