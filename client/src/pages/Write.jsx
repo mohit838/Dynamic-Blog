@@ -31,16 +31,20 @@ const Write = () => {
               <b>Visibility: </b> Public
             </span>
             <input style={{ display: "none" }} type="file" name="" id="file" />
-            <label htmlFor="file">Upload</label>
+            <label className="file" htmlFor="file">
+              Upload
+            </label>
             <div className="buttons">
               <button>Save as draft</button>
               <button>Udpate</button>
             </div>
           </div>
           <div className="item">
-            <div className="categories">
+            <div className="cat">
               <input type="radio" name="cat" value="art" id="art" />
               <label htmlFor="art">ART</label>
+            </div>
+            <div className="cat">
               <input
                 type="radio"
                 name="cat"
@@ -48,6 +52,8 @@ const Write = () => {
                 id="technology"
               />
               <label htmlFor="technology">TECHNOLOGY</label>
+            </div>
+            <div className="cat">
               <input type="radio" name="cat" value="craft" id="craft" />
               <label htmlFor="craft">CRAFT</label>
             </div>
