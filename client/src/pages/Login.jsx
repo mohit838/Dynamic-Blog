@@ -12,7 +12,8 @@ const Login = () => {
           <button>LogIn</button>
           <p>Username or password is worng!</p>
           <span>
-            Don't have any account? <Link to="/register">Register</Link>
+            Don't have any account? <Link to="/register">Register</Link> ||
+            <Link to="/">Homepage</Link>
           </span>
         </form>
       </div>
