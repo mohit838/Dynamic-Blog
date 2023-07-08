@@ -16,7 +16,10 @@ const Register = () => {
   const handleSubmitRegForm = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`/auth/register`, inputValue);
+      const res = await axios.post(
+        `http://localhost:7000/api/auth/register`,
+        inputValue
+      );
       console.log(res);
     } catch (error) {
       console.log(error);
